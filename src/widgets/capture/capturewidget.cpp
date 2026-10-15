@@ -344,6 +344,7 @@ void CaptureWidget::initButtons()
         for (auto* buttonList : { &allButtonTypes, &visibleButtonTypes }) {
             buttonList->removeOne(CaptureTool::TYPE_SAVE);
             buttonList->removeOne(CaptureTool::TYPE_COPY);
+            buttonList->removeOne(CaptureTool::TYPE_OCR);
 #ifdef ENABLE_IMGUR
             buttonList->removeOne(CaptureTool::TYPE_IMAGEUPLOADER);
 #endif
@@ -473,7 +474,8 @@ void CaptureWidget::initHelpMessage()
     QList<QPair<QString, QString>> keyMap;
     keyMap << std::pair(tr("Mouse"), tr("Select screenshot area"));
     using CT = CaptureTool;
-    for (auto toolType : { CT::TYPE_ACCEPT, CT::TYPE_SAVE, CT::TYPE_COPY }) {
+    for (auto toolType :
+         { CT::TYPE_ACCEPT, CT::TYPE_SAVE, CT::TYPE_COPY, CT::TYPE_OCR }) {
         if (!m_tools.contains(toolType)) {
             continue;
         }

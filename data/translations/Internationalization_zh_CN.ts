@@ -3429,4 +3429,70 @@ You may need to escape the &apos;#&apos; sign as in &apos;\#FFF&apos;</source>
         <translation>%1 (%2)</translation>
     </message>
 </context>
+<context>
+    <name>OcrTool</name>
+    <message>
+        <source>Text copied to clipboard.</source>
+        <translation>文字已复制到剪贴板。</translation>
+    </message>
+    <message>
+        <source>Recognize Text</source>
+        <translation>文字识别</translation>
+    </message>
+    <message>
+        <source>Recognize Chinese and English text in the selection (offline)</source>
+        <translation>离线识别选区中的中文和英文</translation>
+    </message>
+</context>
+<context>
+    <name>OcrDialog</name>
+    <message>
+        <source>Recognize Text</source>
+        <translation>文字识别</translation>
+    </message>
+    <message>
+        <source>Recognizing Chinese and English text locally…</source>
+        <translation>正在本地识别中文和英文…</translation>
+    </message>
+    <message>
+        <source>Recognized text</source>
+        <translation>识别结果</translation>
+    </message>
+    <message>
+        <source>Copy Text</source>
+        <translation>复制文字</translation>
+    </message>
+    <message>
+        <source>Text recognition timed out. Try a smaller selection.</source>
+        <translation>文字识别超时，请尝试缩小选区。</translation>
+    </message>
+    <message>
+        <source>Could not run Tesseract: %1</source>
+        <translation>无法运行 Tesseract：%1</translation>
+    </message>
+    <message>
+        <source>Tesseract was not found. Install Tesseract OCR and its English (eng) and Simplified Chinese (chi_sim) language data, then make sure tesseract is on PATH.</source>
+        <translation>未找到 Tesseract。请安装 Tesseract OCR 及英文（eng）和简体中文（chi_sim）语言包，并确保 PATH 中包含 tesseract。</translation>
+    </message>
+    <message>
+        <source>Could not prepare the selected image for text recognition.</source>
+        <translation>无法准备选区图像以进行文字识别。</translation>
+    </message>
+    <message>
+        <source>Text recognition failed: %1</source>
+        <translation>文字识别失败：%1</translation>
+    </message>
+    <message>
+        <source>English (eng) and Simplified Chinese (chi_sim) OCR language data are required. Install both language packs and check TESSDATA_PREFIX if you use a local installation.</source>
+        <translation>需要英文（eng）和简体中文（chi_sim）OCR 语言包。请安装这两个语言包；若使用本地安装，请检查 TESSDATA_PREFIX 设置。</translation>
+    </message>
+    <message>
+        <source>No text was found. Cancel and select a clearer or larger text area.</source>
+        <translation>未识别到文字。请取消后选择更清晰或更大的文字区域。</translation>
+    </message>
+    <message>
+        <source>Recognition complete. You can edit the text before copying.</source>
+        <translation>识别完成。可以修改文字后再复制。</translation>
+    </message>
+</context>
 </TS>

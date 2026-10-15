@@ -157,6 +157,12 @@ endif()
 
 add_subdirectory(src)
 
+option(BUILD_OCR_TESTS "Build the offline OCR dialog tests (Unix)" OFF)
+if(BUILD_OCR_TESTS AND UNIX)
+  enable_testing()
+  add_subdirectory(tests/ocr)
+endif()
+
 # CPack
 set(CPACK_PACKAGE_VENDOR "flameshot-org")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Powerful yet simple to use screenshot software.")
